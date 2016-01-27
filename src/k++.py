@@ -15,16 +15,16 @@ import re
 # These are the regular expressions that define the language. As of now,
 # they include multi-line regexes, which might require hacking newlines.
 k = {
-    "boilerplate"   :   r"#DJKHALED\n#WETHEBEST",
-    "import"        :   r"fanluv (?P<libname>\w+?)$",
-    # "def"           :   r"they don't want you to (?P<func_name>\w*?) (?P<args>[\w ]*?\n) (?P<body>.*?)🙏",
-    "func_open"     :   r"they don't want you to (?P<func_name>\w*?) (?P<args>[\w ]*?\n)$",
-    "func_end"      :   r"🙏",
-    "="             :   r"^🔑 (?P<left>\w*) (?P<right>.*)$",
-    "loops"         :   r"ride wit me(?P<loop>.*?)another one$",
+    "boilerplate"   :   r"^#DJKHALED\n#WETHEBEST",
+    "import"        :   r"fanluv (?P<libname>\w+?)\b",
+    "def"           :   r"they don't want you to (?P<func_name>\w*?) (?P<args>[\w ]*)\n (?P<body>.*?)🙏",
+    # "func_open"     :   r"they don't want you to (?P<func_name>\w*) (?P<args>[\w ]*)",
+    # "func_end"      :   r"🙏",
+    "="             :   r"🔑 (?P<left>\w*) (?P<right>.*)",
+    "loops"         :   r"ride wit me(?P<loop>.*?)another one",
     "break"         :   r"you played yourself",
-    "return"        :   r"^major 🔑 (?P<return>\w*?$)",
-    "print"         :   r"🔥 (?P<print>.*?)$",
+    "return"        :   r"major 🔑 (?P<return>\w*?)",
+    "print"         :   r"🔥 (?P<print>.+)",
     "true"          :   r"(?P<true>👍)",
     "false"         :   r"(?P<false>👎)",
     "struct"        :   r"(?P<struct>\w*?) talk(?P<fields>.*)you smart",
@@ -32,7 +32,7 @@ k = {
 }
 combined = "(" + ")|(".join(k.values()) + ")"
 
-f = open('/Users/razi/git/🔑++/fibonacci.liooooon', 'r')
+f = open('/Users/razi/git/🔑++/inspiration.liooooon', 'r')
 program = f.read()
 
 def line_to_ast(line):
@@ -101,23 +101,25 @@ def parse(program):
             func_name, args = re.search(k["func_open"], line).groups()
             
             start_index = i
-            while i < len(lines) and not re.search(k["func_end"], lines[i]):
+            while not re.search(k["func_end"], lines[i]):
+                print(lines[i])
                 i += 1
+                if i == len(lines) :
+                    raise SyntaxError("You played yourself. 🙏")
             
-            print()
             # parse the body of the function
+            print(start_index, i)
+
+            # TODO
+            # Some weird funky shit is happening with this recursive step
             body_parsed = parse(''.join(lines[start_index:i]))
             args_parsed = map(lambda x: ast.parse(x), args.split())
-            
 
             context.append(ast.FunctionDef(name=func_name, 
                 args=arguments(args=args_parsed, vararg=None, kwarg=None, defaults=[],
                 decorator_list=[],
                 body=body_parsed)))
 
-        a = line_to_ast(line)
-        if a: 
-            print(ast.dump(a))
 
         i += 1
 
@@ -125,10 +127,45 @@ def parse(program):
     ast.fix_missing_locations(body)
     return body
 
-gen_ast = parse(program)
 
-print(compile(gen_ast, '<string>', mode='exec'))
+def substitute(p):
+    #   Substitute Python for 🔑++
 
+    subs = [
+        (k["true"],     r"True"),
+        (k["false"],    r"False"),
+        (k["import"],   r"import \g<libname>"),
+        (k["return"],   r"return \g<return>"),
+        (k["="],        r"\g<left> = \g<right>"),
+        (k["print"],    r"print(\g<print>)"),
+        (k["break"],    r"break"),
+    ]
+
+    for pattern, replacement in subs:
+        p = re.sub(pattern, replacement, p)
+
+    p = re.sub(k["loops"],  r"while True:\n \g<loop>", p, 
+            flags=re.DOTALL)
+    p = re.sub(k["def"],    r"def \g<func_name>(\g<args>):\n \g<body>", p, 
+            flags=re.DOTALL)
+    
+    return p
+
+def parse_v2(program):
+
+    # check for boilerplate
+    if not re.match(k["boilerplate"], program):
+        raise SyntaxError("You played yourself. #DJKHALED #WETHEBEST")
+
+    return ast.parse(substitute(program))
+
+
+exec(compile(parse_v2(program), filename="<ast>", mode="exec")) 
+
+try:
+    pass
+except:
+    print("Your code could not compile. You played yourself.")
 
 # import ast
 
