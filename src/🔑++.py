@@ -34,8 +34,7 @@ khaled = {
 program = 'fanluv Math'
 
 def parse(program):
-    ''' Read and tokenize 🔑++ source, return a Python AST
-    '''
+    ''' Read and tokenize 🔑++ source, return a Python AST '''
     return ast_from_tokens(tokenize(program))
 
 def tokenize(string):

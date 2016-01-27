@@ -1,3 +1,19 @@
+#DJKHALED
+#WETHEBEST
+#
+# fibonacci_in_python_w_ast.py
+#
+# THIS IS SOME 🔥 FIBONACCI. IMPLEMENTED IN AN IMPERATIVE STYLE
+# IN PYTHON, AND THE AST REPRESENTATION OF THAT 
+#
+# This is some 🔥 Fibonacci. This is an imperative implementation,
+# in the imperative spirit of 🔑++. The first 
+#
+
+#
+# Python syntax
+#
+
 def fibonacci(n):
     acc1 = 0
     acc2 = 1
@@ -13,6 +29,11 @@ def fibonacci(n):
 
     return acc1
 
+
+# 
+# Python's ast representation of the above code. This is what 
+# we're trying to generate by parsing the 🔑++. 
+#
 
 Module(
     body=[FunctionDef(name='fibonacci', args=arguments(
