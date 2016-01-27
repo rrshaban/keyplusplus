@@ -1,7 +1,7 @@
 #DJKHALED
 #WETHEBEST
-fanluv Math
-fanluv String
+fanluv math
+fanluv string
 
 they don't want you to fibonacci n
   
@@ -12,8 +12,12 @@ they don't want you to fibonacci n
     🔑 temp acc2
     🔑 acc2 acc2 + acc1
     🔑 acc1 temp
-    🔑 n n - 1 
-   another one if x < 1
+    🔑 n n - 1
+
+    if n < 1: 
+      you played yourself
+  another one
+
 
   major 🔑 acc1 
 🙏
@@ -24,19 +28,26 @@ they don't want you to fizzbuzz max
   🔑 n 0
 
   ride wit me
-    if n % 3 == 0 and n % 5 == 0
+    if n % 3 == 0 and n % 5 == 0:
       🔥 "FizzBuzz"
-    if n % 3 == 0
+    if n % 3 == 0:
       🔥 "Fizz"
-    if n % 5 == 0
+    if n % 5 == 0:
       🔥 "Buzz"
-    else
+    else:
       🔥 n
-  another one if n < max
+
+    if n >= max:
+      you played yourself
+  another one
 
   major 🔑 👍
 
 🙏
+
+ride wit me
+
+another me
 
 
 breakfast talk
@@ -49,8 +60,6 @@ you smart
 🔑 to success is breakfast (turkey_bacon=👍, 
                             egg_whites=👍,
                             water=👍)
-
-
 
 
 

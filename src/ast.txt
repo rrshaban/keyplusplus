@@ -1,0 +1,33 @@
+ast
+
+
+#DJKHALED  ::= boilerplate
+#WETHEBEST ::= boilerplate
+
+
+<fanluv> _x_ ::= import _x_
+
+<👍>   ::= True
+<👎>   ::= False
+
+<they don't want you to> _x_ args  ::=   def _x_(args):
+
+🙏     ::= end of function
+
+
+<🔑> _x_ _y_   ::=   _x_ = _y_
+
+
+<ride wit me>
+  _body_
+<another one> if _cond_
+
+
+<major 🔑> _x_   ::=   return _x_
+
+<🔥> ::= print
+
+
+_x_ talk      ::=   struct
+  🔑 var
+you smart
