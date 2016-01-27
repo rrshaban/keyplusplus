@@ -1,14 +1,14 @@
 #DJKHALED
 #WETHEBEST
 #
+# https://codeshare.io/sYZ1d
+# 
 # fibonacci_in_python_w_ast.py
 #
-# THIS IS SOME 🔥 FIBONACCI. IMPLEMENTED IN AN IMPERATIVE STYLE
-# IN PYTHON, AND THE AST REPRESENTATION OF THAT 
+# This is some 🔥 Fibonacci: an imperative implementation
+# in Python and its ast representation.
 #
-# This is some 🔥 Fibonacci. This is an imperative implementation,
-# in the imperative spirit of 🔑++. The first 
-#
+
 
 #
 # Python syntax

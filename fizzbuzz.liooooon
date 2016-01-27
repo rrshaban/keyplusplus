@@ -1,0 +1,66 @@
+#DJKHALED
+#WETHEBEST
+
+they don't want you to fizzbuzz max
+  
+  🔑 n 0
+
+  ride wit me
+    if n % 3 == 0 and n % 5 == 0:
+      🔥 "FizzBuzz"
+    elif n % 3 == 0:
+      🔥 "Fizz"
+    elif n % 5 == 0:
+      🔥 "Buzz"
+    else:
+      🔥 n
+
+    if n >= max:
+      you played yourself
+  another one
+
+  major 🔑 👍
+
+🙏
+
+# def fizzbuzz(max):
+#   n = 0
+#   while True:
+#     if n % 3 == 0 and n % 5 == 0:
+#       print("FizzBuzz")
+#     elif n % 3 == 0:
+#       print("Fizz")
+#     elif n % 5 == 0:
+#       print("Buzz")
+#     else:
+#       print(n)
+#     if n >= max:
+#       break
+#     n = n + 1
+#   return True
+
+
+# Module(body=[
+#   FunctionDef(name='fizzbuzz', args=arguments(args=[Name(id='max', ctx=Param())], vararg=None, kwarg=None, defaults=[]), 
+#     body=[
+#       Assign(targets=[Name(id='n', ctx=Store())], value=Num(n=0)), 
+#       While(test=Name(id='True', ctx=Load()), 
+#         body=[
+#           If(test=BoolOp(op=And(), values=[Compare(left=BinOp(left=Name(id='n', ctx=Load()), op=Mod(), right=Num(n=3)), ops=[Eq()], comparators=[Num(n=0)]), Compare(left=BinOp(left=Name(id='n', ctx=Load()), op=Mod(), right=Num(n=5)), ops=[Eq()], comparators=[Num(n=0)])]), 
+#             body=[Print(dest=None, values=[Str(s='FizzBuzz')], nl=True)], 
+#             orelse=[
+#               If(test=Compare(left=BinOp(left=Name(id='n', ctx=Load()), op=Mod(), right=Num(n=3)), ops=[Eq()], comparators=[Num(n=0)]), 
+#                 body=[Print(dest=None, values=[Str(s='Fizz')], nl=True)], 
+#                 orelse=[
+#                   If(test=Compare(left=BinOp(left=Name(id='n', ctx=Load()), op=Mod(), right=Num(n=5)), ops=[Eq()], comparators=[Num(n=0)]), 
+#                     body=[Print(dest=None, values=[Str(s='Buzz')], nl=True)], orelse=[Print(dest=None, values=[Name(id='n', ctx=Load())], nl=True)])])]), 
+#           If(test=Compare(left=Name(id='n', ctx=Load()), ops=[GtE()], comparators=[Name(id='max', ctx=Load())]), 
+#             body=[Break()], orelse=[]), 
+#           Assign(targets=[Name(id='n', ctx=Store())], value=BinOp(left=Name(id='n', ctx=Load()), op=Add(), right=Num(n=1)))], orelse=[]), 
+#       Return(value=Name(id='True', ctx=Load()))], decorator_list=[]
+#   )])
+
+
+
+
+
