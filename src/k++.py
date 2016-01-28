@@ -71,7 +71,3 @@ program = f.read()
 
 exec(compile(parse_v2(program), filename="<🔑++>", mode="exec")) 
 
-try: 
-    pass
-except:
-    print("Your code could not compile. You played yourself.")
