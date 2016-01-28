@@ -134,7 +134,9 @@ DJ Khaled has the best fans in the world. You can access local Python libraries 
 
 ## Next Steps
 
-We're working on O'Khaled, a JIT compiler for 🔑++.
+We're currently working on implementing struct support in :key:++. 
+
+We are also working on O'Khaled, a JIT compiler for 🔑++.
 
 ## Acknowledgemnets
 
