@@ -34,7 +34,7 @@ they don't want you to fibonacci n
 they don't want you to fizzbuzz max
   
   🔑 n 0
-
+  
   ride wit me
     if n % 3 == 0 and n % 5 == 0:
       🔥 "FizzBuzz"

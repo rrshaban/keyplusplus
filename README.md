@@ -117,7 +117,7 @@ another one
 ```
 
 #### Breaks
-To exit a loop, use the command `you played yourself`. Thus we can write a traditional loop as follows:
+To exit a loop use the command `you played yourself`. Thus we can write a traditional loop as follows:
 
 ```
 ride wit me
