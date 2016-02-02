@@ -36,6 +36,11 @@ they don't want you to fizzbuzz max
 🙏
 ```
 
+## How to run
+```
+$> python 🔑++ examples/hello_world.liooooon
+```
+
 ## Name
 This language is called :key:++ because it's the key to more success, and another one.
 

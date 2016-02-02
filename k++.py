@@ -65,9 +65,12 @@ def parse_v2(program):
     # print(python)
     return ast.parse(python)
 
+def main():
+    f = open(sys.argv[1], 'r')
+    program = f.read()
 
-f = open('/Users/razi/git/🔑++/inspiration.liooooon', 'r')
-program = f.read()
+    exec(compile(parse_v2(program), filename="<🔑++>", mode="exec")) 
 
-exec(compile(parse_v2(program), filename="<🔑++>", mode="exec")) 
+if __name__ == '__main__':
+  main()
 
