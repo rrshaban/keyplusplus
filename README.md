@@ -3,6 +3,8 @@
 
 Other programming languages, they don't want you to win. That's why we're bringing you :key:++, the key to more success.
 
+![:key:++](https://i.ytimg.com/vi/GNtRgxJJyVw/maxresdefault.jpg)
+
 ## Hello World
 ```
 🔥 "Hello World"
