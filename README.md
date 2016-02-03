@@ -38,7 +38,7 @@ they don't want you to fizzbuzz max
 
 ## How to run
 ```
-$> python 🔑++ examples/hello_world.liooooon
+$> python 🔑++.py examples/hello_world.liooooon
 ```
 
 ## Name
@@ -142,6 +142,4 @@ DJ Khaled has the best fans in the world. You can access local Python libraries 
 We're currently working on implementing struct support in :key:++. 
 
 We are also working on O'Khaled, a JIT compiler for 🔑++.
-
-## Acknowledgemnets
 
