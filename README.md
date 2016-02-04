@@ -3,7 +3,13 @@
 
 Other programming languages, they don't want you to win. That's why we're bringing you :key:++, the key to more success.
 
+They don't want you to code your way to more success. We do. They don't want you to code with 🔥emoji. We do. They don't want you always have another one. We do.
+
+And guess what? We've changed – a lot. 
+
 ![:key:++](https://i.ytimg.com/vi/GNtRgxJJyVw/maxresdefault.jpg)
+
+Welcome to 🔑++, the best programming language around.
 
 ## Hello World
 ```
