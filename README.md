@@ -151,3 +151,10 @@ We're currently working on implementing struct support in :key:++.
 
 We are also working on O'Khaled, a JIT compiler for 🔑++.
 
+## Who did this?
+
+Good question. @rrshaban and @lambdu put this project together after a late-night brainstorming session. Hope you enjoy
+
+## Isn't this just a blah blah python
+
+Yeah, whatever. Another one.
