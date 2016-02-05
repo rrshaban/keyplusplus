@@ -58,6 +58,7 @@ You can change the alias if you'd prefer not to type emojis – we recommend "ke
 
 ```
 $> 🔑++ examples/hello_world.liooooon
+Hello world - WE THE BEST!
 ```
 
 ## Name
