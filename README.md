@@ -44,9 +44,20 @@ they don't want you to fizzbuzz max
 🙏
 ```
 
-## How to run
+## Running 🔑++ locally
+
+In order to run 🔑++ on your local machine, you'll want to set up an alias so you can run code from anywhere.
+
+Add the following code to your `~/.profile` or `~/.bash_profile` (check out [StackOverflow](http://stackoverflow.com/a/8967864/4283301) for more information).
+
 ```
-$> python 🔑++.py examples/hello_world.liooooon
+alias 🔑++="PATH_TO_DIRECTORY/🔑++/bin/🔑++"
+```
+
+You can change the alias if you'd prefer not to type emojis – we recommend "key++". Then you can just run
+
+```
+$> 🔑++ examples/hello_world.liooooon
 ```
 
 ## Name
@@ -142,7 +153,6 @@ another one
 
 #### Importing modules
 DJ Khaled has the best fans in the world. You can access local Python libraries via `fanluv [libname]`.
-
 
 
 ## Next Steps

@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 # coding=utf-8
 #
-# https://codeshare.io/ppLOE
+# Welcome to 🔑++, the programming language they don't want you to use.
+# For more information about language functionality, check out
+# https://github.com/rrshaban/keyplusplus
 #
 #
 
@@ -30,8 +32,8 @@ k = {
     "function"      :   r"(?P<function>\w+) vibes (?P<args>[\w ]*)\n",
 }
 
-def substitute(p):
-    #   Substitute Python for 🔑++
+def replace(p):
+    # Python for 🔑++
     # TODO: structs and fields remain to be implemented
 
     subs = [
@@ -61,15 +63,23 @@ def parse_v2(program):
     if not re.match(k["boilerplate"], program):
         raise SyntaxError("You played yourself. #DJKHALED #WETHEBEST")
 
-    python = substitute(program)
-    # print(python)
-    return ast.parse(python)
+    return ast.parse(replace(program))
 
 def main():
-    f = open(sys.argv[1], 'r')
-    program = f.read()
 
-    exec(compile(parse_v2(program), filename="<🔑++>", mode="exec")) 
+    if len(sys.argv) < 2:
+        raise IOError('''
+            You must pass the 🔑++ a file to run:
+
+            e.g. 🔑++ hello.liooooon
+            ''')
+
+    try: 
+        f = open(sys.argv[1], 'r')
+        program = f.read()
+        exec(compile(parse_v2(program), filename="<🔑++>", mode="exec")) 
+    except IOError:
+        print("Could not open {}. You played yourself.".format(sys.argv[1]))
 
 if __name__ == '__main__':
   main()
