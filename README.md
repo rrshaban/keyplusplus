@@ -3,6 +3,14 @@
 
 Other programming languages, they don't want you to win. That's why we're bringing you :key:++, the key to more success.
 
+They don't want you to code your way to more success. We do. They don't want you to code with 🔥emoji. We do. They don't want you always have another one. We do. Another one. 
+
+And guess what? We've changed – a lot. 
+
+![:key:++](https://i.ytimg.com/vi/GNtRgxJJyVw/maxresdefault.jpg)
+
+Welcome to 🔑++, the programming language for winners and champions. We the best.
+
 ## Hello World
 ```
 🔥 "Hello World"
@@ -143,3 +151,11 @@ We're currently working on implementing struct support in :key:++.
 
 We are also working on O'Khaled, a JIT compiler for 🔑++.
 
+
+## Who did this?
+
+Good question. Razi Shaban and Alec Pillsbury put this project together after a late-night brainstorming session. Hope you unlock more success
+
+## Isn't this just a blah blah python
+
+Yeah, yeah, whatever. Another one.
