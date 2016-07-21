@@ -69,7 +69,7 @@ def main():
 
     if len(sys.argv) < 2:
         raise IOError('''
-            You must pass the 🔑++ a file to run:
+            Congratulations, you played yourself. You must pass the 🔑++ a file to run:
 
             e.g. 🔑++ hello.liooooon
             ''')
