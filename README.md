@@ -1,6 +1,8 @@
 `#DJKHALED`
 `#WETHEBEST`
 
+An emoji-based programming language designed to satisfy a curiosity around language-parsing and inspired by the idiolect of DJ Khaled. Designed over a few days at Swarthmore College. 
+
 Other programming languages, they don't want you to win. That's why we're bringing you :key:++, the key to more success.
 
 They don't want you to code your way to more success. We do. They don't want you to code with 🔥emoji. We do. They don't want you always have another one. We do. Another one. 
